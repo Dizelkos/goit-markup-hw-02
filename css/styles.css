@@ -52,6 +52,8 @@ a {
   
 .nav-menu {
     margin-left: 95px;
+    font-weight: 500;
+    font-size: 14px;
     display: flex;
     align-items: center;
   }
@@ -81,7 +83,13 @@ a {
   }
 
 .header-contacts-link {
-  color: var(--header-color); 
+  color: var(--main-color); 
+  font-family: Roboto;
+font-size: 14px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0.02em;
+text-align: left;
 }
 
 .header-contacts-link:hover,
@@ -163,15 +171,29 @@ a {
 .features-item-heading {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 14px;
   color: var(--header-color);
   /* margin-bottom: 10px; */
+  line-height: 16px;
   letter-spacing: 0.03em;
+  text-align: left;
 }
 
 .features-item-text {
   color: var(--main-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+/* Jobs */
+
+.jobs-heading {
+  font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: 42px;
+letter-spacing: 0.03em;
+text-align: center;
 }
 
 /* Team */
@@ -235,6 +257,36 @@ a {
   line-height: 1.9;
 }
 
+/* Проекти кнопки навигации */
+
+.project-selector-button {
+  height: 38px;
+  background-color: var(--medium-bg-color);
+  border: 0;
+  border-radius: 4px;
+  line-height: 1.63;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  margin-right: 8px;
+  margin-top: 94px;
+  padding: 6px 22px;
+  cursor: pointer;
+  font-family: var(--main-font-family);
+  transition: all 0.3s ease;
+}
+
+.project-selector-button:hover {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+}
+
+.active-button {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+}
+
+
 /* Footer */
 
 .footer {
@@ -242,19 +294,16 @@ a {
   /* padding-top: 60px; */
 }
 
+
 .footer .logo {
   /* margin-bottom: 20px; */
   display: block;
   color: var(--main-bg-color);
 }
 
-/* .footer-contacts {
-  padding-bottom: 60px;
-} */
-
-/* .footer-contacts-item {
-  margin-bottom: 9px;
-} */
+.footer-contacts {
+  font-style: normal;
+}
 
 .footer-contacts-item 
 .footer-contacts-link {
